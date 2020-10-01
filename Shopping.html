@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab css02 Shopping Mockup</title>
+    <link rel="stylesheet" href="./css/Shopping.css">
+</head>
+
+<body>
+    <span class="logo" style="height: 100px;">Logo</span>
+    <span><input type="search" placeholder="Search..."></span>
+    <br><br>
+
+    <!-- Top Navigation Bar -->
+    <div class="topnav"></div>
+    <ul>
+        <li><a href="#bestseller">Best Seller</a></li>
+        <li><a href="#todaydeal">Today's Deal</a></li>
+        <li><a href="#electronics">Electronics</a></li>
+        <li><a href="#csservice">Customer Service</a></li>
+    </ul>
+    </div>
+    <br><br>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="fakeimg" style="height:200px;">Image 1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="fakeimg" style="height:200px;">Image 2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="fakeimg" style="height:200px;">Image 3</div>
+        </div>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+    </div>
+
+    <div class="row">
+        <h2>Up to 40% off in Baby & Toys</h2>
+        <div class="row-full">
+            <div class="grid-item2">1</div>
+            <div class="grid-item2">2</div>
+            <div class="grid-item2">3</div>
+            <div class="grid-item2">4</div>
+            <div class="grid-item2">5</div>
+            <div class="grid-item2">6</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+    
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+/* Logo image */
+.logo {
+    background-color: #aaa;
+    width: 30%;
+    padding: 20px;
+    margin: auto;
+  }
+
+    /* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+  /* Top Navigation Bar */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    z-index: 1;
+  }
+
+  li {
+    float: left;
+    position: relative;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+  }
+
+
+/* Slideshow Container */
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: #aaa;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    line-height: 300px;
+    text-align: center;
+  }
+
+  .row-full {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .grid-item2 {
+    background-color: #aaa;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    line-height: 200px;
+    text-align: center;
+  }
+  /* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
